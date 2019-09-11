@@ -20,7 +20,8 @@ Some modifications are made to work with V5+
    4. **`render()`** : Things that are changing in different screensizes.   
    <hr>
    NOTE: Appending any elements in `render()` will create new object on every dimension change of the viewport and render them on top of each other. Avoid appending. Append and create objects and element in `init()`. Here, we only update already-existing elements. 
-   <hr>
+   <hr>  
+   
       1. Call `updateDimension(window.innerWidth)`: updates variables defined in 2 - i according to the screensize.
       2. Initialize axes and set tick properties acoording to the breakpoint.
       3. Set ranges (`[0, width], [height, 0]`) for scales.   
